@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (bagian head tetap sama) ... -->
+</head>
+<body>
+    <header>
+        <h1><span class="heart">♥</span> Wee Wrold Website <span class="heart">♥</span></h1>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Selamat Datang, Sayang! <span class="ornament">🌸</span></h2>
+            <p>Ini adalah tempat spesial kita berdua. Nikmati playlist, wishlist, dan quotes kita.</p>
+        </section>
+
+        <section class="section">
+            <h2>Playlist Kita <span class="ornament">🎵</span></h2>
+            <h3>Playlist 1</h3>
+            <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/playlist/6wfYL6D5EEZRjaJghnuLpW?utm_source=generator" 
+                    width="100%" 
+                    height="352" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+            </iframe>
+            
+            <h3>Playlist 2</h3>
+            <iframe style="border-radius:12px" 
+                    src="https://open.spotify.com/embed/playlist/5ciOQ6koP5zXmK3jFSVtSJ?utm_source=generator" 
+                    width="100%" 
+                    height="352" 
+                    frameBorder="0" 
+                    allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="section">
+            <h2>Wishlist Kita <span class="ornament">🌠</span></h2>
+            <div id="wishBox">
+                <input type="text" id="wishInput" placeholder="Tulis harapan kita...">
+                <button onclick="addWish()">Tambah</button>
+                <ul id="wishList"></ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Quotes <span class="ornament">💖</span></h2>
+            <div id="quoteBox">
+                <input type="text" id="quoteInput" placeholder="Tulis quote kamu...">
+                <button onclick="addQuote()">Tambah</button>
+                <ul id="quoteList"></ul>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // ... (script tetap sama) ...
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momen Spesial Kita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f9f7f7;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #3d405b;
+            color: #f2e9e4;
+            padding: 40px 0;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+        .section {
+            background-color: #fff;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .heart {
+            color: #e07a5f;
+            font-size: 24px;
+        }
+        .ornament {
+            font-size: 30px;
+            margin: 10px;
+        }
+        #wishBox, #quoteBox {
+            background-color: #f2e9e4;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        #wishList, #quoteList {
+            list-style-type: none;
+            padding: 0;
+        }
+        #wishInput, #quoteInput {
+            width: calc(100% - 120px);
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3d405b;
+            color: #f2e9e4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #555b7e;
+        }
+        .playlist-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .playlist {
+            flex-basis: calc(50% - 15px);
+            margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+            .playlist {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Momen Spesial Kita</h1>
+        <p class="subtitle">Sebuah ruang untuk kenangan dan harapan kita berdua</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Makasih Sudah Datang, Love You Sayang <span class="heart">♥</span></h2>
+            
